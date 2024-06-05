@@ -1,0 +1,10 @@
+Pour la question 2, je penses qu'il faut rajouter un champs score_tache. Parcequ'une tache tache genere des points et maintenant le champs score sera le cumul des points score_tache que l'utilisateur aura reussi à terminer. On peut faire en sorte  que lorsque l'utilisateur marque la tache terminé sont score soit augmenté des points de cette tache sinon 0.
+
+
+Explication de la requete: je prends une liste des taches je regardes les score_tache de chaque tache qui le compose et que cette tache soit marqué terminé on cumul, et ceux pour toutes les listes de taches et ensuite les ordonner pour voir le programme de taches (liste tache) ayant le score le plus élévé.
+
+j'ai aussi voulu ajouté une contrainte sur le champs idRealisateur, pour empecher que ce champs ne soit rempli par n'importe quel valeur. C'est a dire si de basse une tache est assigné par le user 1 et 2, que user 3 ne soit pas definit comme realisateur, seulement 1 ou 2. J'ai eue quelques erreur sur cette contrainte j'ai prefer pour l'instant la mettre en commentaire et revoir plus tard. 
+
+Ajout d'une table Assignation qui contient les clés idUser et idTache, c'est pour implementer la relation many to many entre ces 2 tables. Un utilsateur peut etre assigné a 0 ou N tachest et une tache est assigné à 0 ou N utilisateurs.
+
+
